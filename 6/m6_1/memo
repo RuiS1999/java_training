@@ -1,0 +1,14 @@
+コンパイル
+>javac Calc.java CalcLogs.java
+
+起動
+>java m6_1.main.Calc
+
+・クラスファイイルはそれぞれのパッケージ名と同じファイルを作り格納
+m6_1
+ |_Calc.java
+ |_Calc.java
+ |_main
+ | |_Calc.class
+ |_logics
+   |_logics.class
