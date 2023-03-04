@@ -17,9 +17,16 @@ public class Main {
         s2.damage = 10;
         h2.sword = s2;
 
-        System.out.println(h.name + "の現在の武器は" + s.name);
+        Wizard w = new Wizard();
+        w.name = "sakuya";
+        w.hp = 150;
+
+        System.out.println(h.name + "の現在の武器は" + h.sword.name);
         h.attack();
-        System.out.println(h2.name +"の現在の武器は" + s2.name);
+        System.out.println(h2.name +"の現在の武器は" + h2.sword.name);
         h2.attack();
+        w.heal(h2);
+        w.heal(h);
+
     }
 }
