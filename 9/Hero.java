@@ -14,4 +14,10 @@ public class Hero {
         this.hp = 100;
         this.name = name;
     }
+
+    public Hero() {
+        this.name = "ダミー";
+        this.MAX_HP = 50;
+        this.hp = 50;
+    }
 }
