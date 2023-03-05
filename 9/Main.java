@@ -1,17 +1,13 @@
 public class Main {
     public static void main(String []args) {
-        Hero h = new Hero();
-        h.name = "kaji";
-        h.hp = 200;
+        Hero h = new Hero("kaji");
         Sword s = new Sword();
         s.name = "木の剣";
         s.damage = 5;
         // swordフィールドに生成済みの剣インスタンスを代入
         h.sword = s;
 
-        Hero h2 = new Hero();
-        h2.name = "mali";
-        h2.hp = 300;
+        Hero h2 = new Hero("mali");
         Sword s2 = new Sword();
         s2.name = "鉄の剣";
         s2.damage = 10;
@@ -19,6 +15,7 @@ public class Main {
 
         Wizard w = new Wizard();
         w.name = "sakuya";
+        w.MAX_HP = 150;
         w.hp = 150;
 
         System.out.println(h.name + "の現在の武器は" + h.sword.name);
@@ -27,6 +24,7 @@ public class Main {
         h2.attack();
         w.heal(h2);
         w.heal(h);
+        w.heal(h2);
 
     }
 }
