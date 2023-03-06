@@ -17,4 +17,8 @@ public class Wizard {
             System.out.println("効果がありませんでした...");
         }
     }
+
+    public Wizard(String name, int MAX_HP, int hp) {
+
+    }
 }
