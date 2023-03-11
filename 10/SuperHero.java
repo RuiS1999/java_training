@@ -15,9 +15,9 @@ public class SuperHero extends Hero {
         System.out.println(this.name + "は撤退した！");
     }
     // 転ぶ
+    /* 継承を用いる際に、finalが付けられたクラスは継承できない */
     public final void slip() {
         this.hp -= 5;
         System.out.println(this.name + "転ばなかった！");
     }
-
 }
