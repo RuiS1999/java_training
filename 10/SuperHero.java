@@ -1,5 +1,16 @@
 public class SuperHero extends Hero {
     boolean flying;
+    public SuperHero() {
+        System.out.println("SuperHeroのコントラクタが動作");
+    }
+
+    // 攻撃する
+    public void attack(Matango m) {
+        super.attack(m);
+        if (this.flying) {
+            super.attack(m);
+        }
+    }
     // 飛ぶ
     public void fly() {
         this.flying = true;
@@ -13,11 +24,5 @@ public class SuperHero extends Hero {
     // 逃げる
     public void run() {
         System.out.println(this.name + "は撤退した！");
-    }
-    // 転ぶ
-    /* 継承を用いる際に、finalが付けられたクラスは継承できない */
-    public final void slip() {
-        this.hp -= 5;
-        System.out.println(this.name + "転ばなかった！");
     }
 }
