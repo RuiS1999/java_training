@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Hero h = new Hero();
-        Hero sh = new SuperHero();
+        SuperHero sh = new SuperHero();
+        sh.run();
+        Weapon w = new Weapon();
+        System.out.println(w.name);
+        System.out.println(w.price);
     }
 }

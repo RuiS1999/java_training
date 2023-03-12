@@ -1,5 +1,5 @@
 public class Hero {
-    String name = "湊";
+    String name = "椛蓮";
     int hp = 100;
     public Hero() {
         System.out.println("Heroのコントラクタが動作");
@@ -16,6 +16,7 @@ public class Hero {
     /* 継承の上書きは実際は上書きではなく、インスタンスは親と子の両方が存在する。
     しかし、外部のインスタンスが優先されるため、子のインスタンスが呼び出され実行結果のようになる。 */
     public final void slip() {
+        
         this.hp -= 5;
         System.out.println(this.name + "転んだ！");
         System.out.println(this.name + "は5のダメージを受けた");
