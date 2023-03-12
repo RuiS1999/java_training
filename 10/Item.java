@@ -9,4 +9,9 @@ public class Item {
         this.name = name;
         this.price = price;
     }
+
+    // 投げる
+    public int getDamage() {
+        return 10;
+    }
 }
