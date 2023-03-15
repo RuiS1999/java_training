@@ -1,0 +1,8 @@
+正しい組み合わせ
+スーパークラス:Person	サブクラス:Student
+スーパークラス:Food	サブクラス:Sushi
+
+間違った組み合わせ
+スーパークラス:Car		サブクラス:Engine
+スーパークラス:Father	サブクラス:Child
+スーパークラス:SuperMan	サブクラス:Man

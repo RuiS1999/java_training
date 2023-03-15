@@ -8,9 +8,11 @@ public class hello {
     int age = 28;
     System.out.println("私の年齢は" + age + "です");
 
-    int sum = Integer.parseInt(args[0]) + Integer.parseInt(args[1]);
 
-    System.out.format("The sum of %s and %s is %s.\n",
-      args[0], args[1], Integer.toString(sum));
+    String jack = "Jack";
+    int[] Jack = new int[49];
+    int j = Jack.length;
+    System.out.println(jack.length());
+    System.out.println(j);
   }
 }
