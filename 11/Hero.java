@@ -1,8 +1,11 @@
 public class Hero {
-    String name = "椛蓮";
+    String name ;
     int hp = 100;
     public Hero() {
-        System.out.println("Heroのコントラクタが動作");
+        this.name = "origin";
+    }
+    public Hero(String name) {
+        this.name = name;
     }
 
     // 戦う

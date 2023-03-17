@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        SuperHero sh = new SuperHero();
-        sh.run();
-        Weapon w = new Weapon();
-        System.out.println(w.name);
-        System.out.println(w.price);
+        Hero h = new SuperHero();
+        Matango ma = new Matango('A');
+        Matango mb = new Matango('B');
+        ma.attack(h);
+        h.attack(mb);
+        System.out.println(h.hp);
     }
 }
