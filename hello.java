@@ -11,8 +11,6 @@ public class hello {
 
     String jack = "Jack";
     int[] Jack = new int[49];
-    int j = Jack.length;
     System.out.println(jack.length());
-    System.out.println(j);
   }
 }
